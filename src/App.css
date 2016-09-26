@@ -1,0 +1,47 @@
+.app {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.card {
+  backface-visibility: hidden;
+  position: relative;
+}
+
+.card,
+.card__front,
+.card__back {
+  width: 300px;
+  height: 500px;
+}
+
+.card__front,
+.card__back {
+}
+
+.card__front,
+.card__back {
+  backface-visibility: hidden;
+  background-color: white;
+  border: solid 1px black;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 300ms;
+}
+
+.card__back {
+}
+
+.rotate__first {
+  visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.rotate__last {
+  visibility: visible;
+  transform: rotateY(0deg);
+}
